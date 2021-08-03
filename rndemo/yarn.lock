@@ -4607,6 +4607,13 @@ react-is@^16.8.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+"react-native-big-calendar@https://github.com/vuquocthien8156/react-native-big-calendar":
+  version "1.0.2"
+  resolved "https://github.com/vuquocthien8156/react-native-big-calendar#c251b831ce15c0b83e14bf78c753b703594bf5d5"
+  dependencies:
+    calendarize "^1.1.1"
+    dayjs "^1.10.4"
+
 react-native-codegen@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/react-native-codegen/-/react-native-codegen-0.0.6.tgz"
@@ -4925,6 +4932,14 @@ rimraf@~2.6.2:
   integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
   dependencies:
     glob "^7.1.3"
+
+rn-big-calendar@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/rn-big-calendar/-/rn-big-calendar-1.0.2.tgz#637977fe59a72141534868ae187ccd170250400f"
+  integrity sha512-qjg5dUqHX+FUXQW0AWMRik3ubEMstW+a9azlok2cgxS5rKA00uMai8C1iVG7L9rJW42G/9Dgjs8fPhEbcbpQsA==
+  dependencies:
+    calendarize "^1.1.1"
+    dayjs "^1.10.4"
 
 rsvp@^4.8.4:
   version "4.8.5"

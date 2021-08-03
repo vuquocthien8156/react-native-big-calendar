@@ -22,10 +22,42 @@ const events = [
   },
 ]
 
-class App {
-  render() {
-    return <></>
-  }
+const App = () => {
+  const [mode, setMode] = React.useState<Mode>('week')
+  const [additionalEvents, setAdditionalEvents] = React.useState<ICalendarEvent[]>([])
+
+  const addEvent = React.useCallback(
+    (start) => {
+      const title = 'new Event'
+      const end = dayjs(start).add(59, 'minute').toDate()
+      setAdditionalEvents([...additionalEvents, { start, end, title }])
+    },
+    [additionalEvents, setAdditionalEvents],
+  )
+
+  return (
+    <React.Fragment>
+      <StatusBar barStyle="light-content" />
+      <SafeAreaView>
+        <View style={{ height: 60, borderBottomWidth: 0.5 }}>
+          <View style={{ width: '50%', marginLeft: 'auto' }}>
+            <Picker onValueChange={setMode} mode="dropdown">
+              <Picker.Item value="week" label="week" />
+              <Picker.Item value="day" label="day" />
+              <Picker.Item value="3days" label="3days" />
+              <Picker.Item value="month" label="month" />
+            </Picker>
+          </View>
+        </View>
+        <Calendar
+          height={Dimensions.get('window').height - 60}
+          events={[...events, ...additionalEvents]}
+          onPressCell={addEvent}
+          mode={mode}
+        />
+      </SafeAreaView>
+    </React.Fragment>
+  )
 }
 
 export default App
