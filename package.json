@@ -1,10 +1,7 @@
 {
   "name": "rn-big-calendar",
   "version": "1.0.2",
-  "main": "build/index.js",
-  "jsnext:main": "build/index.es.js",
-  "module": "build/index.es.js",
-  "types": "build/index.d.ts",
+  "main": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/llotheo/react-native-big-calendar.git"
