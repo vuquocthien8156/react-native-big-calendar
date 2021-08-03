@@ -13,8 +13,7 @@
     "dayjs": "^1.10.4",
     "react": "17.0.1",
     "react-native": "0.64.1",
-    "react-native-big-calendar": "https://github.com/vuquocthien8156/react-native-big-calendar",
-    "rn-big-calendar": "^1.0.2"
+    "rn-big-calendar": "https://github.com/vuquocthien8156/react-native-big-calendar.git"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

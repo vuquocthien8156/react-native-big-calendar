@@ -1,8 +1,7 @@
 import dayjs from 'dayjs'
 import React from 'react'
 import { Dimensions, Picker, SafeAreaView, StatusBar, View } from 'react-native'
-
-import { Calendar, ICalendarEvent, Mode } from './build'
+import { Calendar, ICalendarEvent, Mode } from 'rn-big-calendar'
 
 const events = [
   {
